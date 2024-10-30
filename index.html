@@ -74,49 +74,18 @@
         gap: 20px;
       }
 
-      nav ul li {
-        margin: 0;
-      }
-
       nav ul li a {
         color: #00bfff;
         text-decoration: none;
         padding: 10px 15px;
         position: relative;
-        overflow: hidden;
         transition: color 0.3s, transform 0.3s;
         font-size: 1.2em;
-      }
-
-      nav ul li a::before,
-      nav ul li a::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: #00bfff;
-        bottom: 0;
-        left: 0;
-        transform: scaleX(0);
-        transition: transform 0.3s ease-in-out;
-      }
-
-      nav ul li a::before {
-        transform-origin: left;
-      }
-
-      nav ul li a::after {
-        transform-origin: right;
       }
 
       nav ul li a:hover {
         color: #ffffff;
         transform: translateY(-3px);
-      }
-
-      nav ul li a:hover::before,
-      nav ul li a:hover::after {
-        transform: scaleX(1);
       }
 
       /* Section styles */
@@ -128,29 +97,16 @@
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
         text-align: center;
-        transform: rotateY(3deg) rotateX(3deg);
-        transition: transform 0.5s ease;
-      }
-
-      section:hover {
-        transform: rotateY(-3deg) rotateX(-3deg);
       }
 
       section h2 {
         font-size: 2.5em;
         margin-bottom: 20px;
-        position: relative;
-        opacity: 0;
-        animation: fadeIn 1s ease forwards,
-          typing 3.5s steps(40, end) 1s forwards;
       }
 
       .content p,
       .content ul {
         margin: 0 0 10px;
-        opacity: 0;
-        animation: fadeIn 1s ease forwards,
-          typing 3.5s steps(40, end) 1s forwards;
       }
 
       /* Footer styles */
@@ -185,22 +141,6 @@
         footer {
           margin: 20px auto;
           padding: 15px;
-        }
-      }
-
-      /* Keyframe animations */
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-
-      @keyframes fadeIn {
-        to {
-          opacity: 1;
         }
       }
 
@@ -315,8 +255,8 @@
         <div class="project">
           <h3>Project 1: Digital Clock</h3>
           <p>
-            <strong>Description:</strong> A sleek digital clock using HTML, CSS,
-            and JavaScript.<br />
+            <strong>Description:</strong> A sleek digital clock using HTML, CSS, and JavaScript.<br />
+            <strong>Technologies:</strong> HTML, CSS, JavaScript<br />
             <strong>Link:</strong>
             <a href="Digital_Clock.html" target="_blank">View Project</a>
           </p>
@@ -324,8 +264,8 @@
         <div class="project">
           <h3>Project 2: Calculator</h3>
           <p>
-            <strong>Description:</strong> A functional calculator built with
-            HTML, CSS, and JavaScript.<br />
+            <strong>Description:</strong> A functional calculator built with HTML, CSS, and JavaScript.<br />
+            <strong>Technologies:</strong> HTML, CSS, JavaScript<br />
             <strong>Link:</strong>
             <a href="Modern_Calculator.html" target="_blank">View Project</a>
           </p>
@@ -333,12 +273,14 @@
         <div class="project">
           <h3>Project 3: Complete Arithmetic Calculator</h3>
           <p>
-            <strong>Description:</strong> An Arithmetic Calculation website developed using
-           HTML, CSS, and JavaScript.<br />
+            <strong>Description:</strong> An Arithmetic Calculation website developed using HTML, CSS, and JavaScript.<br />
+            <strong>Technologies:</strong> HTML, CSS, JavaScript<br />
             <strong>Link:</strong>
             <a href="Arithmetics_Math_Function.html" target="_blank">View Project</a>
           </p>
+        </div>
       </section>
+      
     </div>
     <footer>
       <p>
